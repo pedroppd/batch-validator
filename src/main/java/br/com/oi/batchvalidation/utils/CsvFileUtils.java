@@ -44,7 +44,7 @@ public class CsvFileUtils {
         List<String> list = Arrays.asList(fields);
 
         if(list.size() >= 4){
-            return new BatchDto(list.get(0), list.get(1), list.get(2), list.get(3), list.get(4), list.get(5));
+            return new BatchDto(new Batch(list.get(0), list.get(1), list.get(2), list.get(3)));
         }
 
         return new BatchDto(list.toString());
